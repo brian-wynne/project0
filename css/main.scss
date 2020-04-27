@@ -1,6 +1,10 @@
 $border-color: black;
 $nav-width: 15%;
 
+%generic-border {
+    border: 1px solid $border-color;
+}
+
 span.red-body {
     color: red;
 }
@@ -16,14 +20,14 @@ span.ancient-aliens {
 }
 
 #aliens-table {
+    @extend %generic-border;
     background-color: lightgray;
-    border: 1px solid $border-color;
     padding: 5px;
     margin-bottom: 20px;
 }
 
 td, th {
-    border: 1px solid $border-color;
+    @extend %generic-border;
     border-collapse: collapse;
 }
 
@@ -47,7 +51,7 @@ nav {
 .container > .row{
     background-color: aliceblue;
     border: 1px solid lightgray;
-    
+
     .col {
         border: 1px solid lightgray;
         border-collapse: collapse;
