@@ -1,0 +1,55 @@
+$border-color: black;
+$nav-width: 15%;
+
+span.red-body {
+    color: red;
+}
+
+span.ancient-aliens {
+    font-size: large;
+    background-color: black;
+    color: white;
+}
+
+#h-welcome {
+    color: blue;
+}
+
+#aliens-table {
+    background-color: lightgray;
+    border: 1px solid $border-color;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+td, th {
+    border: 1px solid $border-color;
+    border-collapse: collapse;
+}
+
+#p-wrap {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+nav {
+    background-color: lightsalmon;
+    width: $nav-width;
+}
+
+@media screen and (max-width: 500px) {
+    p {
+        background-color: lightpink;
+        word-wrap: initial;
+    }
+}
+
+.container > .row{
+    background-color: aliceblue;
+    border: 1px solid lightgray;
+    
+    .col {
+        border: 1px solid lightgray;
+        border-collapse: collapse;
+    }
+}
